@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+#start-btn {
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+#game-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(6, 80px);
+  gap: 2px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.tile {
+  width: 80px;
+  height: 80px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.player {
+  background-color: #4caf50;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
